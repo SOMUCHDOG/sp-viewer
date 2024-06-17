@@ -3,13 +3,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
+import { PrimeReactProvider, PRimeReactContext } from 'primereact/api';
 
-function App() {
+export default function App({ Component, pageProps }) {
   return (
-    <Routes>
-      <Route path="/" element={<LoginForm />} />
-    </Routes>
+  <LoginForm />
+    /*
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+      </Routes>
+      */
   );
 }
 
-export default App;
