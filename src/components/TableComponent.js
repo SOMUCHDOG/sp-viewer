@@ -1,11 +1,12 @@
-// src/components/LoginForm.js
+// src/components/TableComponent.js
+
 import axios from 'axios';
 import { TreeTable } from 'primereact/treetable';
 import { Column } from 'primereact/column';
 import { PrimeReactProvider } from 'primereact/api';
 import React, {useState, useEffect } from 'react';
 
-const LoginForm = () => {
+const TableComponent = () => {
   const [nodes, setNodes] = useState([]);
 
   useEffect(() => {
@@ -45,4 +46,4 @@ const LoginForm = () => {
 };
 // Helper components
 
-export default LoginForm;
+export default TableComponent;
